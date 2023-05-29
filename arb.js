@@ -267,7 +267,7 @@ async function startWatching() {
 
 	await light_wallet.waitUntilFirstHistoryReceived();
 
-//	await waitForStability();
+	await waitForStability();
 
 	eventBus.on("aa_request_applied", onAARequest);
 	eventBus.on("aa_response_applied", onAAResponse);
